@@ -475,7 +475,7 @@ body{
 @media screen and (min-width:200px) and (max-width:500px) {
     body{
         overflow-x: hidden;
-        min-width: 200px;
+        width: 100%;
     }
     .header-section{
         width: 100vw;
