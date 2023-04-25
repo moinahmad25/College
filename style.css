@@ -7,6 +7,7 @@
     list-style: none;
     text-decoration: none;
     font-family: 'Quicksand', sans-serif;
+    scroll-behavior: smooth;
 }
 
 body {
@@ -14,7 +15,85 @@ body {
     height: 100%;
     overflow-x: hidden;
 }
-
+.popup-menu{
+    width: 36rem;
+    height: 20rem;
+    z-index: 11;
+    background: white;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    border-radius: 12px;
+    transform: translate(-50%,-50%);
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1.5rem;
+    animation-name: blurr;
+    animation-duration: .3s;
+    animation-fill-mode: forwards;
+    transition: all .3s ease-in-out;
+    padding: 0 1rem;
+}
+.bi-x-circle-fill{
+    color: rgb(255, 177, 177);
+    font-size: 2rem;
+    position: absolute;
+    top: 0.2rem;
+    cursor: pointer;
+    /* background: white; */
+    /* border-radius: 50%; */
+    right: 0.5rem;
+    /* border: 2px solid red; */
+    /* padding: 0 4px; */
+    transition: all .3s ease-in-out;
+}
+.bi-x-circle-fill:hover{
+    color: rgb(255, 58, 58);
+}
+@keyframes blurr{
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+.activee{
+    display: flex;
+}
+.button{
+    width: 80%;
+    height: 3.5rem;
+    font-size: 18px;
+    border-radius: 35px;
+    border: none;
+    font-weight: 500;
+    background: #000;
+    color: white;
+    transition: all .3s ease-in-out;
+    cursor: pointer;
+}
+.button:nth-child(2){
+    background: rgb(211, 235, 255);
+    color: rgb(0, 103, 186);
+    border: 2px solid rgb(0, 103, 186);
+}
+.button:nth-child(2):hover{
+    background: rgb(0, 103, 186);
+    color: white;
+}
+.button:nth-child(3){
+    /* margin-top: 2rem; */
+    background: rgb(211, 255, 234);
+    color: rgb(0, 154, 110);
+    border: 2px solid rgb(0, 154, 110);
+}
+.button:nth-child(3):hover{
+    background: rgb(0, 154, 110);
+    color: white;
+}
 .header-section {
     width: 100%;
     height: 100vh;
@@ -85,7 +164,6 @@ body {
     padding: 0 8px;
     transition: .2s ease-in-out;
 }
-
 .link:hover::after {
     width: 100%;
     height: 2px;
@@ -205,6 +283,8 @@ body {
     position: relative;
     overflow: hidden;
     transition: .3s;
+    cursor: pointer;
+    font-weight: 500;
 }
 
 .btn-text {
@@ -612,7 +692,6 @@ body {
         top: 1rem;
         z-index: 6;
         display: block;
-        /* display: none; */
     }
 
     .navigation.acttive ~ .nav .navlist{
@@ -624,7 +703,7 @@ body {
         position: absolute;
         top: 20px;
         left: 20px;
-        z-index: 5;
+        z-index: 6;
     }
 
     .c-name-desc {
@@ -783,6 +862,6 @@ body {
         margin: 0 -10px;
     }
 }
-@media screen and (min-width:501px) and (max-width:770px){
+@media screen and (min-width:601px) and (max-width:850px){
 
 }

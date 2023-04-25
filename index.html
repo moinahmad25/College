@@ -10,7 +10,7 @@
     <link rel="stylesheet" href="style.css">
 </head>
 
-<body>
+<body class="body">
     <header class="header-section">
         <div class="hero-image"></div>
         <nav class="navbar">
@@ -21,15 +21,21 @@
                 <img src="Assets/Naming Logo.svg" alt="" class="logo">
                 <ul class="navlist">
                     <li class="list"><a href="" class="link">Home</a></li>
-                    <li class="list"><a href="" class="link">Feature</a></li>
-                    <li class="list"><a href="" class="link">About</a></li>
-                    <li class="list"><a href="" class="active">Register</a></li>
+                    <li class="list"><a href="#feature" class="link">Feature</a></li>
+                    <li class="list"><a href="#footerr" class="link">About</a></li>
+                    <!-- <li class="list"><a href="" onclick="revealpopup()" class="active">Register</a></li> -->
                 </ul>
             </div>
         </nav>
+        <div class="popup-menu">
+            <i class="bi-x-circle-fill"></i>
+            <button class="button">Are you a student ?</button>
+            <button class="button">Are you a supervisor ?</button>
+            <button class="button">Are you a warden ?</button>
+        </div>
         <div class="title">
             <div class="c-name-desc">
-                <h1 class="c-name">Hostel Presidency</h1>
+                <h1 class="c-name">Hostel<span style="color: rgb(101, 214, 255);">विभाग</span></h1>
                 <p class="desc">For BRCM College of Engineering & Technology</p>
             </div>
             <div class="circle1"></div>
@@ -37,11 +43,11 @@
             <div class="circle3"></div>
             <p class="para">The Hostel Management System web appllication where, hostel managers can manage the hostel
                 easily. Students can also get room allotment online.</p>
-            <a href="" class="btn btn-text">Explore More</a>
+            <button onclick="revealpopup()" class="btn btn-text">Join Yourself</button>
         </div>
     </header>
     <main class="main">
-        <div class="container">
+        <div class="container" id="feature">
             <div class="head">
                 <h1 class="features-heading">Features</h1>
             </div>
@@ -77,7 +83,7 @@
                     </div>
                 </div>
             </div>
-            <div class="about-us">
+            <div class="about-us" id="footerr">
                 <h3 class="features-heading">Messages From The Desk</h3>
                 <div class="card-container">
                     <div class="card">

@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Detail Page</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="wrapper">
+        <div class="wrapper2">
+            <h1 class="pg-heading">Personal Detail Page</h1>
+            <p class="sm-desc">Fill up your personal detail to book the room.</p>
+            <div class="st-container">
+                <div class="care">
+                    <div class="line"></div>
+                    <h3 class="sec-heading">Student's Details</h3>
+                    <div class="line"></div>
+                </div>
+                <div class="container">
+                    <div class="st-profile-photo">
+                        <img src="" alt="" class="profile-photo">
+                        <button class="choose">Choose Photo</button>
+                        <input type="file" name="" class="image-choose" hidden accept="image/*" id="">
+                    </div>
+                    <div class="st-profile-detail">
+                        <div class="full-name d-flex">
+                            <input type="text" required class="name f-name" placeholder="First Name">
+                            <input type="text" required class="name l-name" placeholder="Surname">
+                        </div>
+                        <input type="text" required class="m-number"
+                            placeholder="Enter Your Mobile No. With Country Code (e.g., +91,+977)">
+                        <input type="email" required class="email" placeholder="Enter Your Email Address (e.g., info@gmail.com)">
+                        <input type="text" required class="clg-name" placeholder="Enter Your College Name">
+                        <div class="internal-info d-flex">
+                            <input type="text" required class="name studying-yr" placeholder="Studying Year">
+                            <input type="text" required class="name bld-grp" placeholder="Enter Your Blood Group">
+                        </div>
+                        <textarea name="" id="" required class="allergy"
+                            placeholder="Write Short Description About Your Allergy (e.g., allergy with dust)"></textarea>
+                        <textarea name="" id="" required class="address"
+                            placeholder="Write Down Your Permanent Address"></textarea>
+                    </div>
+                </div>
+            </div>
+            <div class="st-container center">
+                <div class="care">
+                    <div class="line"></div>
+                    <h3 class="sec-heading">Parent's Details</h3>
+                    <div class="line"></div>
+                </div>
+                <div class="container center">
+                    <div class="st-profile-detail">
+                        <input type="text" required class="name1 father-name" placeholder="Enter Your Father's Name">
+                        <input type="text" required class="name1 mother-name" placeholder="Enter Your Mother's Name">
+                        <input type="text" required class="m-number p-number"
+                            placeholder="Enter Mobile No. of Your Parent With Country Code (e.g., +91****, +977****)">
+                        <textarea name="" required id="" class="address p-address"
+                            placeholder="Write Down Your Parent's Permanent Address"></textarea>
+                    </div>
+                </div>
+            </div>
+            <div class="other-details">
+                <div class="care">
+                    <div class="line"></div>
+                    <h3 class="sec-heading">Visitor's Details</h3>
+                    <div class="line"></div>
+                </div>
+                <p style="text-align: center;color: rgb(112, 112, 112);font-size: 0.8rem;">(You can only add 3 Visitors including your parents.)</p>
+                <div class="container2">
+                    <div class="photo-wrap">
+                        <div class="st-profile-photo1">
+                            <img src="" alt="" class="profile-photo">
+                            <button class="choose1">Choose Photo</button>
+                            <input type="file" name="" class="image-choose1" hidden accept="image/*" id="">
+                        </div>
+                        <input type="text" required class="r-detail r1-name" placeholder="Name">
+                        <input type="text" required class="r-detail r1-relation" placeholder="Relation">
+                        <input type="text" required class="r-detail r1-number" placeholder="Phone Number">
+                    </div>
+                    <div class="photo-wrap">
+                        <div class="st-profile-photo2">
+                            <img src="" alt="" class="profile-photo">
+                            <button class="choose2">Choose Photo</button>
+                            <input type="file" name="" class="image-choose2" hidden accept="image/*" id="">
+                        </div>
+                        <input type="text" required class="r-detail r2-name" placeholder="Name">
+                        <input type="text" required class="r-detail r2-relation" placeholder="Relation">
+                        <input type="text" required class="r-detail r2-number" placeholder="Phone Number">
+                    </div>
+                    <div class="photo-wrap">
+                        <div class="st-profile-photo3">
+                            <img src="" alt="" class="profile-photo">
+                            <button class="choose3">Choose Photo</button>
+                            <input type="file" name="" class="image-choose3" hidden accept="image/*" id="">
+                        </div>
+                        <input type="text" required class="r-detail r3-name" placeholder="Name">
+                        <input type="text" required class="r-detail r3-relation" placeholder="Relation">
+                        <input type="text" required class="r-detail r3-number" placeholder="Phone Number">
+                    </div>
+                </div>
+            </div>
+            <button class="btn index">Next</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
